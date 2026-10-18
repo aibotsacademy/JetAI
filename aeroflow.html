@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroFlow — Empty-Leg Jets &amp; Helicopters · AERO</title>
+  <meta name="description" content="AeroFlow by AERO: a cinematic browser for empty-leg private jet and helicopter flights. Route, date, class, price and region filters; request a leg in four steps." />
+  <meta name="theme-color" content="#081321" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/platform.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="assets/css/aeroflow.css" />
+  <link rel="stylesheet" href="assets/css/motion.css" />
+</head>
+<body class="site aeroflow" data-page="aeroflow" data-root=".">
+  <a class="skip-link" href="#browse">Skip to available flights</a>
+
+  <!-- ===================== NAV (original: Empty Legs · My Flights · Request Charter) ===================== -->
+  <header class="site-header" data-header>
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="AERO home"><span aria-hidden="true">✦</span>AERO<small class="af-sub">AeroFlow</small></a>
+      <button class="btn btn-ghost btn-icon nav-toggle" id="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="AeroFlow">
+        <a href="#browse" class="accent-line">Empty Legs</a>
+        <a href="#featured" class="accent-line">Featured</a>
+        <a href="#market" class="accent-line">Market</a>
+        <a href="#rotor" class="accent-line">Helicopters</a>
+        <a href="#my-flights" class="accent-line">My Flights</a>
+        <button type="button" class="btn btn-primary" id="af-charter">Request Charter</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="af-hero" id="af-hero" data-hero aria-labelledby="af-title">
+      <div class="hero-media af-hero-media" aria-hidden="true">
+        <div class="af-slides">
+          <div class="af-slide is-on"><img class="" src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" fetchpriority="high" decoding="async" onerror="this.style.opacity=0" /></div>
+          <div class="af-slide"><img class="" src="https://images.unsplash.com/photo-1746213952441-86bbbb2f6ec5?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1746213952441-86bbbb2f6ec5?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1746213952441-86bbbb2f6ec5?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1746213952441-86bbbb2f6ec5?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1746213952441-86bbbb2f6ec5?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+          <div class="af-slide"><img class="" src="https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+          <div class="af-slide"><img class="" src="https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+        </div>
+        <!-- Original AERO hero video, if present (file.mp4). Falls back to the photo sequence. -->
+        <video class="hero-video" id="hero-video" muted loop playsinline preload="metadata" tabindex="-1">
+          <source src="assets/media/file.mp4" type="video/mp4" />
+          <source src="file.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-shade af-shade" aria-hidden="true"></div>
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="wrap hero-content">
+        <p class="eyebrow hero-eyebrow load-fade"><span class="dot" aria-hidden="true"></span><span id="af-eyebrow">AI-curated · Empty-leg jets &amp; helicopters</span></p>
+        <h1 class="hero-title" id="af-title" data-text="Fly the|empty leg.">Fly the empty leg.</h1>
+        <p class="hero-sub load-fade d1">Aircraft repositioning without passengers, offered well below charter retail. AERO’s engine finds each leg, checks it against the schedule and prices it with reasons you can read.</p>
+        <div class="hero-ctas load-fade d2">
+          <a class="btn btn-primary" href="#browse">Browse available aircraft <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <button type="button" class="btn" id="af-hero-filter"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M7 12h10M11 18h2"/></svg> Filter by route &amp; date</button>
+        </div>
+        <div class="hero-facts load-fade d3" aria-label="Demo inventory">
+          <div><b id="af-stat-legs">0</b><span>Empty legs · demo</span></div>
+          <div><b id="af-stat-types">0</b><span>Aircraft types</span></div>
+          <div><b id="af-stat-dest">0</b><span>Destinations</span></div>
+        </div>
+      </div>
+      <div class="hero-controls"><span class="demo-pill">Synthetic inventory</span><a class="scroll-cue" href="#featured"><i aria-hidden="true"></i>Scroll</a></div>
+    </section>
+
+    <!-- ===================== FEATURED DEPARTURE (cinematic data sequence) ===================== -->
+    <section class="af-feature" id="featured" data-sequence data-steps="4" aria-labelledby="ft-title">
+      <div class="af-feature-stage">
+        <div class="ft-photo" aria-hidden="true"><div class="ft-photo-in" id="ft-photo"></div></div>
+        <div class="ft-cabin" aria-hidden="true"><div class="ft-cabin-in" id="ft-cabin"></div></div>
+        <div class="ft-map" id="ft-map" aria-hidden="true"></div>
+        <div class="wrap ft-grid">
+          <div class="ft-copy">
+            <p class="eyebrow">Featured departure · highest demand</p>
+            <h2 id="ft-title" class="ft-route"><span id="ft-from">—</span><i aria-hidden="true">→</i><span id="ft-to">—</span></h2>
+            <p class="ft-cities" id="ft-cities"></p>
+            <ol class="ft-steps">
+              <li class="is-active" data-seq-step="0"><b>The aircraft</b><span id="ft-ac"></span></li>
+              <li data-seq-step="1"><b>The route</b><span><b class="num" id="ft-dist" data-seq-count="0" data-seq-from="0.25" data-seq-to="0.45">0</b> nm · <b class="num" id="ft-block">0</b> h block · <span id="ft-when"></span></span></li>
+              <li data-seq-step="2"><b>The price</b><span>Retail <s id="ft-retail"></s> → <b class="num ft-live" id="ft-price" data-seq-count="0" data-seq-start="0" data-seq-from="0.5" data-seq-to="0.7" data-prefix="$">$0</b> <em class="ft-save" id="ft-save"></em></span></li>
+              <li data-seq-step="3"><b>The cabin</b><span id="ft-cabin-txt"></span></li>
+            </ol>
+            <div class="row ft-cta"><button type="button" class="btn btn-primary" id="ft-open">View this leg <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button><span class="demo-pill">Demo data</span></div>
+          </div>
+        </div>
+        <div class="ft-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ===================== LISTINGS (original browser, restyled) ===================== -->
+    <section class="af-browse" id="browse" aria-labelledby="browse-title">
+      <div class="wrap">
+        <div class="listings-topbar">
+          <div>
+            <p class="eyebrow" data-reveal>AI-Curated Inventory</p>
+            <h2 class="af-h2" id="browse-title" data-reveal data-reveal-delay="1">Available private jets <em>&amp; helicopters</em></h2>
+          </div>
+          <div class="af-sort" role="group" aria-label="Sort by">
+            <button type="button" class="pill" data-sort="soonest" aria-pressed="true">Soonest</button>
+            <button type="button" class="pill" data-sort="price" aria-pressed="false">Lowest price</button>
+            <button type="button" class="pill" data-sort="saving" aria-pressed="false">Biggest saving</button>
+          </div>
+        </div>
+        
+      <div class="row-between" style="margin-bottom:12px">
+        <p class="muted" id="af-summary" aria-live="polite"></p>
+        <button class="btn" id="af-trigger" aria-expanded="false" aria-controls="af-panel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M7 12h10M11 18h2"/></svg>
+          Filter <span class="count-badge" id="af-badge" hidden>0</span></button>
+      </div>
+      <div class="active-tags" id="af-tags" aria-label="Active filters"></div>
+      <div class="filter-panel" id="af-panel" hidden>
+        <div>
+          <p class="fp-label" id="af-route-lbl">Route</p>
+          <div class="fp-route-row">
+            <div class="fp-airport-field field"><label class="field-label" for="af-from">From</label><input type="text" id="af-from" placeholder="Any departure…" autocomplete="off" aria-controls="af-from-dd" /><div class="fp-dropdown" id="af-from-dd" role="listbox" hidden></div></div>
+            <button type="button" class="fp-route-swap" id="af-swap" aria-label="Swap origin and destination"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg></button>
+            <div class="fp-airport-field field"><label class="field-label" for="af-to">To</label><input type="text" id="af-to" placeholder="Any destination…" autocomplete="off" aria-controls="af-to-dd" /><div class="fp-dropdown" id="af-to-dd" role="listbox" hidden></div></div>
+          </div>
+        </div>
+        <div>
+          <p class="fp-label">Departure Window</p>
+          <div class="pills" id="af-dates" role="group" aria-label="Departure window">
+            <button type="button" class="pill" data-range="any" aria-pressed="true">Any Date</button><button type="button" class="pill" data-range="today" aria-pressed="false">Today</button><button type="button" class="pill" data-range="7" aria-pressed="false">Next 7 Days</button><button type="button" class="pill" data-range="30" aria-pressed="false">Next 30 Days</button><button type="button" class="pill" data-range="custom" aria-pressed="false">Custom Range</button>
+          </div>
+          <div class="fp-custom" id="af-custom" hidden>
+            <label class="field"><span>From Date</span><input type="date" id="af-dfrom" /></label>
+            <label class="field"><span>To Date</span><input type="date" id="af-dto" /></label>
+          </div>
+        </div>
+        <div><p class="fp-label">Jet Class</p><div class="pills" id="af-classes" role="group" aria-label="Jet class"><button type="button" class="chip" data-class="" aria-pressed="true">All Classes</button><button type="button" class="chip" data-class="light" aria-pressed="false">✈ Light Jet<small>4–8 pax · Short haul</small></button><button type="button" class="chip" data-class="midsize" aria-pressed="false">✈ Midsize<small>6–9 pax · Mid range</small></button><button type="button" class="chip" data-class="heavy" aria-pressed="false">✈ Heavy Jet<small>8–14 pax · Long haul</small></button><button type="button" class="chip" data-class="ultra" aria-pressed="false">✈ Ultra Long Range<small>10–17 pax · Global</small></button><button type="button" class="chip" data-class="rotor" aria-pressed="false">◎ Helicopter<small>5–8 pax · City & island hops</small></button></div></div>
+        <div class="cols-2">
+          <div><p class="fp-label">Max Price</p><div class="pills" id="af-prices" role="group" aria-label="Maximum price">
+            <button type="button" class="pill" data-price="" aria-pressed="true">Any</button><button type="button" class="pill" data-price="5000" aria-pressed="false">Under $5K</button><button type="button" class="pill" data-price="15000" aria-pressed="false">Under $15K</button><button type="button" class="pill" data-price="50000" aria-pressed="false">Under $50K</button></div></div>
+          <div><p class="fp-label">Region</p><div class="pills" id="af-regions" role="group" aria-label="Region">
+            <button type="button" class="pill" data-region="" aria-pressed="true">Anywhere</button><button type="button" class="pill" data-region="europe" aria-pressed="false">Europe</button><button type="button" class="pill" data-region="americas" aria-pressed="false">Americas</button><button type="button" class="pill" data-region="mideast" aria-pressed="false">Middle East</button><button type="button" class="pill" data-region="asia" aria-pressed="false">Asia</button></div></div>
+        </div>
+        <div class="fp-actions"><button type="button" class="btn btn-ghost" id="af-clear">Clear All</button><button type="button" class="btn btn-primary" id="af-apply">Show Results <span class="count-badge" id="af-apply-count">0</span></button></div>
+      </div>
+        <div class="af-grid" id="af-grid" aria-live="polite"></div>
+        <p class="af-note">Empty legs follow an operator’s schedule and can move or cancel. Every request is <b>pending operator confirmation</b> — nothing on this page is a booking or live availability.</p>
+      </div>
+    </section>
+
+    <!-- ===================== MARKET IN MOTION (scroll-driven data story) ===================== -->
+    <section class="af-market" id="market" data-sequence data-steps="3" aria-labelledby="mk-title">
+      <div class="af-market-stage wrap">
+        <div class="mk-copy">
+          <p class="eyebrow">The market in motion</p>
+          <h2 class="af-h2" id="mk-title">Where the aircraft <em>are going.</em></h2>
+          <ol class="mk-steps">
+            <li class="is-active" data-seq-step="0"><span class="k">01</span><div><b>Every published leg, drawn.</b><small>Each line is a repositioning flight an operator has opened for sale.</small></div></li>
+            <li data-seq-step="1"><span class="k">02</span><div><b>Savings by class.</b><small>Average discount against the one-way charter rate card.</small></div></li>
+            <li data-seq-step="2"><span class="k">03</span><div><b>What it adds up to.</b><small>Seats in motion and value offered below retail.</small></div></li>
+          </ol>
+        </div>
+        <div class="mk-visual">
+          <div class="mk-panel mk-map is-active" data-seq-step="0" id="mk-map"></div>
+          <div class="mk-panel mk-bars" data-seq-step="1" id="mk-bars"></div>
+          <div class="mk-panel mk-totals" data-seq-step="2" id="mk-totals"></div>
+          <span class="demo-pill mk-pill">Synthetic data</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HELICOPTERS ===================== -->
+    <section class="af-rotor" id="rotor" aria-labelledby="rotor-title">
+      <div class="af-rotor-bg" data-parallax="0.12" aria-hidden="true"><img class="" src="https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+      <div class="wrap af-rotor-in">
+        <p class="eyebrow" data-reveal>Rotor</p>
+        <h2 class="af-h2" id="rotor-title" data-reveal data-reveal-delay="1">The last ten minutes, <em>by helicopter.</em></h2>
+        <p data-reveal data-reveal-delay="2">Short-hop helicopter repositioning — city to airport, island to island — listed alongside the jets they meet on the ramp.</p>
+        <div class="row" data-reveal data-reveal-delay="3"><button type="button" class="btn btn-primary" id="af-rotor-btn">Show helicopter legs</button><span class="af-rotor-count" id="af-rotor-count"></span></div>
+      </div>
+      <div class="af-rotor-strip wrap" aria-hidden="true">
+        <div class="af-rotor-tile" data-reveal><img class="" src="https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=2400&q=72 2400w" sizes="33vw" alt="Gray and black helicopter in flight" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+        <div class="af-rotor-tile" data-reveal data-reveal-delay="1"><img class="" src="https://images.unsplash.com/photo-1558305671-9f2fd9f7f699?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1558305671-9f2fd9f7f699?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1558305671-9f2fd9f7f699?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1558305671-9f2fd9f7f699?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1558305671-9f2fd9f7f699?auto=format&fit=crop&w=2400&q=72 2400w" sizes="33vw" alt="Black helicopter on the ground near trees" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+        <div class="af-rotor-tile" data-reveal data-reveal-delay="2"><img class="" src="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=2400&q=72 2400w" sizes="33vw" alt="Helicopters parked on a concrete apron" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+      </div>
+    </section>
+
+    <!-- ===================== MY FLIGHTS (original member dashboard) ===================== -->
+    <section class="af-my" id="my-flights" aria-labelledby="my-title">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Member Portal</p>
+        <h2 class="af-h2" id="my-title" data-reveal data-reveal-delay="1">My AERO</h2>
+        <div class="af-dash">
+          <section class="af-dash-card" data-reveal aria-labelledby="my-up"><p class="dash-label" id="my-up">Upcoming flights</p><div id="af-upcoming"></div></section>
+          <section class="af-dash-card" data-reveal data-reveal-delay="1" aria-labelledby="my-routes"><p class="dash-label" id="my-routes">Saved routes</p><div id="af-routes"></div></section>
+          <section class="af-dash-card wide" data-reveal data-reveal-delay="2" aria-labelledby="my-recs"><p class="dash-label" id="my-recs">AI recommendations</p><div id="af-recs" class="af-recs"></div></section>
+        </div>
+        <p style="margin-top:24px"><a class="btn" href="portal/passenger.html">Open the full passenger portal →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== LEG DETAIL + BOOKING (original details & booking sections) ===================== -->
+  <div class="af-detail" id="af-detail" role="dialog" aria-modal="true" aria-labelledby="dt-title" hidden>
+    <div class="af-detail-scroll" id="af-detail-scroll">
+      <button type="button" class="af-close" id="dt-close" aria-label="Close details">×</button>
+      <div class="dt-hero"><div class="dt-hero-img" id="dt-photo"></div><div class="dt-hero-txt wrap" id="dt-head"></div></div>
+      <div class="wrap dt-body" id="dt-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><a class="brand" href="index.html"><span aria-hidden="true">✦</span>AERO</a><p class="muted" style="margin-top:14px;max-width:34ch;font-size:14px">AeroFlow — the empty-leg browser of the AERO platform.</p></div>
+        <div><h4>AeroFlow</h4><ul><li><a href="#browse">Empty legs</a></li><li><a href="#featured">Featured departure</a></li><li><a href="#market">Market</a></li><li><a href="#my-flights">My flights</a></li></ul></div>
+        <div><h4>Platform</h4><ul><li><a href="index.html">AERO home</a></li><li><a href="platform/empty-legs.html">Empty-Leg Engine</a></li><li><a href="platform/marketplace.html">Marketplace</a></li><li><a href="platform/dashboard.html">Command Center</a></li></ul></div>
+        <div><h4>Portals</h4><ul><li><a href="portal/passenger.html">Passenger Portal</a></li><li><a href="platform/owner-portal.html">Owner Portal</a></li><li><a href="index.html#demo">Request Demo</a></li></ul></div>
+      </div>
+      <p class="disclaimer">AeroFlow is part of a software prototype. All flights, prices and aircraft are synthetic demo data: nothing shown is live availability or a completed booking, and every request requires operator confirmation. AERO is not an FAA-approved dispatch system or compliance authority. Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Unsplash License): Andy Wang · Cassio Nunes · Chris Leipelt · Horizon flights · Jakob Rosen · Niklas Jonasson · Nitish Suri · Oskar Kadaksoo · Rebecca Leitner · Royce Fonseca · Walter Gaspar · Yaroslav Muzychenko · Yiran Ding · mona Masoumi. Aircraft pictured are illustrative and do not depict the demo fleet’s tail numbers.</p>
+    </div>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
