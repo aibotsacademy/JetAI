@@ -45,6 +45,7 @@
         <a href="#solutions" class="accent-line">Solutions</a>
         <a href="#empty-legs" class="accent-line">Empty Legs</a>
         <a href="#ai" class="accent-line">AI</a>
+        <a href="aeroflow.html" class="accent-line">AeroFlow</a>
         <a href="platform/dashboard.html" class="accent-line">Open Demo Workspace</a>
         <a href="#demo" class="btn btn-primary">Request Demo</a>
       </nav>
@@ -55,9 +56,9 @@
     <!-- ===================== HERO (original file.mp4 preserved) ===================== -->
     <section class="hero" id="hero" data-hero aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <div class="hero-fallback"></div>
+        <div class="hero-fallback"><img class="hero-photo" src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" fetchpriority="high" decoding="async" onerror="this.style.opacity=0" /></div>
         <!-- Original AERO hero video. Place file.mp4 in assets/media/ (or next to index.html). Not generated or renamed. -->
-        <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata" tabindex="-1">
+        <video class="hero-video" id="hero-video" poster="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72" autoplay muted loop playsinline preload="metadata" tabindex="-1">
           <source src="assets/media/file.mp4" type="video/mp4" />
           <source src="file.mp4" type="video/mp4" />
         </video>
@@ -73,7 +74,7 @@
           <a class="btn btn-primary" href="#demo">Request a Demo
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <a class="btn" href="platform/dashboard.html">Explore the Workspace</a>
-          <a class="btn btn-ghost" href="platform/marketplace.html">
+          <a class="btn btn-ghost" href="aeroflow.html">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M7 12h10M11 18h2"/></svg>Browse Empty Legs</a>
         </div>
         <div class="hero-facts load-fade d3" aria-label="Platform facts">
@@ -111,7 +112,7 @@
           <div class="seq-dots" aria-hidden="true"><span data-seq-dot="0" aria-current="step"></span><span data-seq-dot="1"></span><span data-seq-dot="2"></span></div>
         </div>
         <div class="seq-visual" aria-hidden="true">
-          <div class="jet-stage"><svg class="jet" viewBox="0 0 810 210"><use href="#jet"/></svg></div>
+          <div class="seq-photo"><img class="" src="https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 60vw" alt="Private jet parked on an airport apron" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
           <div class="callout c1"><b>3,260 h</b>Airframe total time</div>
           <div class="callout c2"><b>TEB → PBI</b>Next leg · 2.4 h block</div>
           <div class="callout c3"><b>2 crew</b>Assigned · qualified</div>
@@ -154,6 +155,58 @@
           <a class="module light-shift" href="platform/marketplace.html" data-reveal data-reveal-delay="2"><span class="m-n">11</span><span class="m-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l1.5-5h13L20 9M4 9h16v11H4z"/></svg></span><h3>Marketplace</h3><p>Broker-facing listings and empty-leg inventory.</p><span class="m-go">Open module →</span></a>
           <a class="module light-shift" href="platform/analytics.html" data-reveal data-reveal-delay="3"><span class="m-n">12</span><span class="m-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6M20 16V6"/></svg></span><h3>Analytics</h3><p>Utilization, profitability and conversion, exportable.</p><span class="m-go">Open module →</span></a>
         </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== FILM STRIP: jets, cabins, helicopters (horizontal, scroll-linked) ===================== -->
+    <section class="film" id="fleet-gallery" data-sequence data-hscroll data-steps="1" aria-labelledby="film-title">
+      <div class="film-stage">
+        <div class="film-track" data-hscroll-track>
+          <div class="film-intro">
+            <p class="eyebrow">Every airframe</p>
+            <h2 id="film-title">Jets. Helicopters.<br><em>Every cabin in between.</em></h2>
+            <p>From light jets to ultra-long-range flagships and the helicopters that meet them on the ramp, AERO manages fixed-wing and rotor fleets in one place.</p>
+            <a class="btn" href="aeroflow.html">Browse empty legs in AeroFlow →</a>
+          </div>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="White private jet on the tarmac at golden hour" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">01</span><b>Ultra-long-range</b><span>Nonstop between continents.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1684838200815-36eef38f353c?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Private jet parked on an airport apron" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">02</span><b>Super-midsize</b><span>The workhorse of every managed fleet.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1772354967311-167285eaa5f5?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Luxurious cabin interior of a private jet" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">03</span><b>The cabin</b><span>Configurations, amenities and seat maps on every tail.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1661954864180-e61dea14208a?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1661954864180-e61dea14208a?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1661954864180-e61dea14208a?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1661954864180-e61dea14208a?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1661954864180-e61dea14208a?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Table set with food and wine on board" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">04</span><b>On-board service</b><span>Catering and handling requests attached to the trip.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Cockpit with digital flight displays" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">05</span><b>The flight deck</b><span>Crew qualifications and duty inputs, in context.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Gray and black helicopter in flight" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">06</span><b>Helicopters</b><span>City, island and heliport transfers.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1542042839913-3bc2c8e229c9?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Helicopter flying near city buildings" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">07</span><b>Urban rotor</b><span>Short hops that connect to the jet.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="Helicopters parked on a concrete apron" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">08</span><b>Rotor fleet</b><span>Helicopters share the same schedule, crew and maintenance views.</span></figcaption>
+            </figure>
+            <figure class="film-card">
+              <div class="film-img"><img class="" src="https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 80vw, 34vw" alt="White aircraft parked in a hangar" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
+              <figcaption><span class="film-n">09</span><b>Maintenance, tracked</b><span>Due items and grounding indicators per airframe.</span></figcaption>
+            </figure>
+        </div>
+        <div class="film-progress" aria-hidden="true"><i></i></div>
       </div>
     </section>
 
@@ -294,38 +347,37 @@
               <div><h3>See what your aircraft earns — and costs.</h3>
                 <ul><li>Utilization against target hours, by month</li><li>Owner statements with revenue, direct costs and fees</li><li>Approval inbox for charter use and empty-leg publishing</li><li>Trip requests that land directly in operations</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/owner-portal.html">Open the Owner Portal</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><use href="#jet" x="20" y="90" width="360" height="94" style="color:#F4F1EA"/><rect x="30" y="220" width="160" height="64" rx="10" fill="rgba(17,28,42,.9)" stroke="rgba(244,241,234,.15)"/><text x="44" y="246" fill="#93A2B3" font-size="11" font-family="DM Sans">UTILIZATION · YTD</text><text x="44" y="272" fill="#F4F1EA" font-size="22" font-family="Cormorant Garamond">312 / 450 h</text></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="Quilted tan leather seats inside a private jet cabin" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
             <div class="persona-panel" role="tabpanel" id="pp-135" aria-labelledby="pt-135" hidden>
               <div><h3>Run charter like a revenue operation.</h3>
                 <ul><li>Pipeline from inquiry to won trip, with follow-up reminders</li><li>Quote builder with transparent block-time assumptions</li><li>Empty-leg engine that turns repositioning into inventory</li><li>Approval states before anything is confirmed to a client</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/charter-crm.html">Open Charter CRM</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><use href="#jet" x="20" y="70" width="360" height="94" style="color:#F4F1EA"/><g font-family="DM Sans" font-size="11"><rect x="30" y="200" width="100" height="90" rx="8" fill="rgba(17,28,42,.9)" stroke="rgba(244,241,234,.15)"/><rect x="146" y="200" width="100" height="90" rx="8" fill="rgba(17,28,42,.9)" stroke="rgba(201,167,106,.5)"/><rect x="262" y="200" width="100" height="90" rx="8" fill="rgba(17,28,42,.9)" stroke="rgba(244,241,234,.15)"/><text x="42" y="222" fill="#93A2B3">NEW</text><text x="158" y="222" fill="#C9A76A">QUOTED</text><text x="274" y="222" fill="#93A2B3">WON</text></g></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1720511580427-b12ed27b2e82?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1720511580427-b12ed27b2e82?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1720511580427-b12ed27b2e82?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1720511580427-b12ed27b2e82?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1720511580427-b12ed27b2e82?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="Passenger standing in front of a private jet" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
             <div class="persona-panel" role="tabpanel" id="pp-91" aria-labelledby="pt-91" hidden>
               <div><h3>A calmer flight department.</h3>
                 <ul><li>One calendar for aircraft, crew and ground handling</li><li>Crew qualification and expiration tracking</li><li>Maintenance due list with grounding indicators</li><li>Cost per hour and per trip, without spreadsheet math</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/operations.html">Open Operations</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><use href="#jet" x="20" y="60" width="360" height="94" style="color:#F4F1EA"/><g stroke="rgba(244,241,234,.12)"><line x1="30" y1="210" x2="370" y2="210"/><line x1="30" y1="240" x2="370" y2="240"/><line x1="30" y1="270" x2="370" y2="270"/></g><rect x="60" y="200" width="90" height="18" rx="4" fill="#C9A76A"/><rect x="190" y="230" width="120" height="18" rx="4" fill="#7FA6CF"/><rect x="110" y="260" width="70" height="18" rx="4" fill="none" stroke="#93A2B3" stroke-dasharray="4 3"/></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1764917301484-f5c0c8fcc844?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="Cockpit with digital flight displays" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
             <div class="persona-panel" role="tabpanel" id="pp-fleet" aria-labelledby="pt-fleet" hidden>
               <div><h3>Every tail, every base, one view.</h3>
                 <ul><li>Fleet directory filtered by class, base and status</li><li>Status changes ripple through dashboards instantly</li><li>Revenue per aircraft and profitability by trip</li><li>CSV export for your own reporting</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/fleet.html">Open Fleet</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><use href="#jet" x="40" y="40" width="200" height="52" style="color:#F4F1EA"/><use href="#jet" x="160" y="120" width="220" height="57" style="color:#C8CFD8"/><use href="#jet" x="30" y="200" width="240" height="62" style="color:#F4F1EA"/></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1576725386266-5c4b8c63da66?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="Helicopters parked on a concrete apron" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
             <div class="persona-panel" role="tabpanel" id="pp-brokers" aria-labelledby="pt-brokers" hidden>
               <div><h3>Inventory you can actually sell.</h3>
                 <ul><li>Marketplace of published empty legs and charter aircraft</li><li>Route and date search with the original AERO filters</li><li>Quote requests that reach the operator’s CRM</li><li>Clear “pending operator confirmation” status — no false availability</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/marketplace.html">Open Marketplace</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><path d="M50 250 Q 200 60 350 140" stroke="#C9A76A" stroke-width="2" fill="none" stroke-dasharray="6 6"/><circle cx="50" cy="250" r="6" fill="#C9A76A"/><circle cx="350" cy="140" r="6" fill="#F4F1EA"/><use href="#jet" x="150" y="80" width="120" height="31" style="color:#F4F1EA"/></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1635672033288-0d05f2062105?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="Business jet parked on a wet runway" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
             <div class="persona-panel" role="tabpanel" id="pp-crews" aria-labelledby="pt-crews" hidden>
               <div><h3>Know where you’re going — and when you rest.</h3>
                 <ul><li>Assignments and 14-day availability at a glance</li><li>Qualification and medical expiry reminders</li><li>Duty and rest inputs with configurable warnings</li><li>Human sign-off remains the authority — always</li></ul>
                 <p style="margin-top:20px"><a class="btn" href="platform/crew.html">Open Crew</a></p></div>
-              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><svg viewBox="0 0 400 320" aria-hidden="true"><use href="#jet" x="20" y="50" width="360" height="94" style="color:#F4F1EA"/><g>
-                <rect x="40" y="200" width="22" height="22" rx="4" fill="rgba(104,183,155,.3)"/><rect x="68" y="200" width="22" height="22" rx="4" fill="rgba(201,167,106,.5)"/><rect x="96" y="200" width="22" height="22" rx="4" fill="rgba(201,167,106,.5)"/><rect x="124" y="200" width="22" height="22" rx="4" fill="rgba(104,183,155,.3)"/><rect x="152" y="200" width="22" height="22" rx="4" fill="rgba(104,183,155,.3)"/><rect x="180" y="200" width="22" height="22" rx="4" fill="rgba(217,107,105,.4)"/><rect x="208" y="200" width="22" height="22" rx="4" fill="rgba(104,183,155,.3)"/></g></svg></div></div>
+              <div class="persona-art zoom" data-mask><div class="mask-inner zoom-target"><img class="" src="https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1764547167359-277e66c9ac74?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(max-width:900px) 100vw, 40vw" alt="White aircraft parked in a hangar" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div></div>
             </div>
           </div>
         </div>
@@ -408,6 +460,7 @@
     <section class="section" id="demo" aria-labelledby="demo-title" style="padding-top:0">
       <div class="wrap">
         <div class="cta" data-reveal>
+          <div class="cta-photo" aria-hidden="true" data-parallax="0.08"><img class="" src="https://images.unsplash.com/photo-1684838200888-192e2a163cc9?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1684838200888-192e2a163cc9?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1684838200888-192e2a163cc9?auto=format&fit=crop&w=1080&q=72 1080w, https://images.unsplash.com/photo-1684838200888-192e2a163cc9?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1684838200888-192e2a163cc9?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" onerror="this.style.opacity=0" /></div>
           <div>
             <p class="eyebrow">NBAA-BACE · Private demos</p>
             <h2 id="demo-title">See AERO with <em>your</em> fleet in mind.</h2>
@@ -438,9 +491,9 @@
         <div><a class="brand" href="index.html"><span aria-hidden="true">✦</span>AERO</a><p class="muted" style="margin-top:14px;max-width:34ch;font-size:14px">One Platform. Every Aircraft. Every Opportunity.</p></div>
         <div><h4>Operate</h4><ul><li><a href="platform/dashboard.html">Command Center</a></li><li><a href="platform/fleet.html">Fleet</a></li><li><a href="platform/operations.html">Operations</a></li><li><a href="platform/crew.html">Crew</a></li><li><a href="platform/maintenance.html">Maintenance</a></li></ul></div>
         <div><h4>Revenue &amp; insight</h4><ul><li><a href="platform/empty-legs.html">Empty-Leg Engine</a></li><li><a href="platform/charter-crm.html">Charter CRM</a></li><li><a href="platform/marketplace.html">Marketplace</a></li><li><a href="platform/finance.html">Finance</a></li><li><a href="platform/analytics.html">Analytics</a></li><li><a href="platform/ai-copilot.html">AI Copilot</a></li></ul></div>
-        <div><h4>Portals</h4><ul><li><a href="platform/owner-portal.html">Owner Portal</a></li><li><a href="portal/passenger.html">Passenger Portal</a></li><li><a href="platform/aircraft-detail.html?id=a4">Aircraft profile</a></li><li><a href="platform/settings.html">Settings</a></li><li><a href="#demo">Request Demo</a></li></ul></div>
+        <div><h4>Portals</h4><ul><li><a href="platform/owner-portal.html">Owner Portal</a></li><li><a href="aeroflow.html">AeroFlow — empty legs</a></li><li><a href="portal/passenger.html">Passenger Portal</a></li><li><a href="platform/aircraft-detail.html?id=a4">Aircraft profile</a></li><li><a href="platform/settings.html">Settings</a></li><li><a href="#demo">Request Demo</a></li></ul></div>
       </div>
-      <p class="disclaimer">AERO is a software prototype. It is not an FAA-approved dispatch system, maintenance release, or regulatory compliance authority. Duty limits, airworthiness and flight feasibility require verified data and qualified human sign-off. Figures on this page are illustrative; the demo workspace uses synthetic data and does not show live availability, aircraft positions or completed transactions. “NBAA-BACE” is referenced only as a meeting venue.</p>
+      <p class="disclaimer">AERO is a software prototype. It is not an FAA-approved dispatch system, maintenance release, or regulatory compliance authority. Duty limits, airworthiness and flight feasibility require verified data and qualified human sign-off. Figures on this page are illustrative; the demo workspace uses synthetic data and does not show live availability, aircraft positions or completed transactions. “NBAA-BACE” is referenced only as a meeting venue.<br>Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Unsplash License): Andy Wang · Cassio Nunes · Chris Leipelt · Horizon flights · Jakob Rosen · Niklas Jonasson · Nitish Suri · Oskar Kadaksoo · Rebecca Leitner · Royce Fonseca · Walter Gaspar · Yaroslav Muzychenko · Yiran Ding · mona Masoumi. Aircraft shown are illustrative and not the demo fleet’s tail numbers.</p>
     </div>
   </footer>
 
